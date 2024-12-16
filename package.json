@@ -5,7 +5,8 @@
         "watch:style": "sass --watch ./scss/style.scss:./css/style.css",
         "watch:product": "sass --watch ./scss/product.scss:./css/product.css",
         "watch:catalog": "sass --watch ./scss/catalog.scss:./css/catalog.css",
-        "start": "concurrently \"npm run watch:style\" \"npm run watch:product\" \"npm run watch:catalog\""
+        "watch:cart": "sass --watch ./scss/cart.scss:./css/cart.css",
+        "start": "concurrently \"npm run watch:style\" \"npm run watch:product\" \"npm run watch:catalog\" \"npm run watch:cart\""
     },
     "devDependencies": {
         "concurrently": "^9.1.0",
