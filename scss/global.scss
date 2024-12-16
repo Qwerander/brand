@@ -1,0 +1,28 @@
+/* global */
+
+body {
+  min-width: 320px;
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  padding-inline: 30px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    padding-inline: 16px;
+  }
+}
+
+main {
+  overflow: hidden;
+}

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE BRAND</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/catalog.css">
     <script defer src="./js/menu.js"></script>
+    <script defer src="./js/filters.js"></script>
 </head>
 
 <body>
@@ -81,63 +82,96 @@
         </div>
     </header>
     <main>
-        <section class="brand">
-            <div class="container brand__container">
-                <div class="brand__left">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="./img/brand/brand-mobile.png">
-                        <source media="(max-width: 1300px)" srcset="./img/brand/brand.png">
-                        <img class="brand__img" src="./img/brand/brand.png" alt="img">
-                    </picture>
-                </div>
-                <div class="brand__right">
-                    <div class="brand__wrapper">
-                        <h1 class="brand__title">THE&nbsp;BRAND</h1>
-                        <h2 class="brand__subtitle">OF LUXERIOUS <span class="brand__subtitle--color">FASHION</span>
-                        </h2>
-                    </div>
-                </div>
+        <section class="top">
+            <div class="container top__container">
+                <h3 class="top__title">NEW ARRIVALS</h3>
+                <p class="top__text">HOME / MEN / <span>NEW ARRIVALS</span></p>
             </div>
         </section>
-        <section class="offer">
-            <div class="container offer__container">
-                <div class="offer__block">
-                    <img class="offer__img" src="./img/offer/offer-1.jpg" alt="Картинка-1">
-                    <div class="offer__content">
-                        <p class="offer__text">30%&nbsp;OFF</p>
-                        <h3 class="offer__title">FOR&nbsp;WOMEN</h3>
+        <section class="filters">
+            <div class="container filters__container">
+
+                <div class="filters__menu-title js-filter-btn">
+                    <span>FILTER</span>
+                    <svg class="filters__menu-title--desktop" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
+                    </svg>
+                    <svg class="filters__menu-title--mobile" width="38" height="25" viewBox="0 0 38 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.08333 25H10.4167C11.5625 25 12.5 24.0625 12.5 22.9167C12.5 21.7708 11.5625 20.8333 10.4167 20.8333H2.08333C0.9375 20.8333 0 21.7708 0 22.9167C0 24.0625 0.9375 25 2.08333 25ZM0 2.08333C0 3.22917 0.9375 4.16667 2.08333 4.16667H35.4167C36.5625 4.16667 37.5 3.22917 37.5 2.08333C37.5 0.9375 36.5625 0 35.4167 0H2.08333C0.9375 0 0 0.9375 0 2.08333ZM2.08333 14.5833H22.9167C24.0625 14.5833 25 13.6458 25 12.5C25 11.3542 24.0625 10.4167 22.9167 10.4167H2.08333C0.9375 10.4167 0 11.3542 0 12.5C0 13.6458 0.9375 14.5833 2.08333 14.5833Z" />
+                    </svg>
+
+                </div>
+                <div class="filters__filter js-filter-menu">
+                    <div class="filters__menu-title filters__menu-title--open js-filter-close">
+                        <span>FILTER</span>
+                        <svg class="filters__menu-title" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="filters__menu">
+                        <ul class="filters__list">
+                            <li class="filters__list-item">
+                                <p class="filters__menu-subtitle">CATEGORY</p>
+                                <ul class="filters__sublist">
+                                    <li class="filters__subitem">Accessories</li>
+                                    <li class="filters__subitem">Bags</li>
+                                    <li class="filters__subitem">Denim</li>
+                                    <li class="filters__subitem">Hoodies&nbsp;&amp;&nbsp;Sweatshirts</li>
+                                    <li class="filters__subitem">Jackets&nbsp;&amp;&nbsp;Coats</li>
+                                    <li class="filters__subitem">Polos</li>
+                                    <li class="filters__subitem">Shirts</li>
+                                    <li class="filters__subitem">Shoes</li>
+                                    <li class="filters__subitem">Sweaters&nbsp;&amp;&nbsp;Knits</li>
+                                    <li class="filters__subitem">T-Shirts</li>
+                                    <li class="filters__subitem">Tanks</li>
+                                </ul>
+                            </li>
+                            <li class="filters__list-item">
+                                <p class="filters__menu-subtitle">BRAND</p>
+                            </li>
+                            <li class="filters__list-item">
+                                <p class="filters__menu-subtitle">DESIGNER</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="offer__block">
-                    <img class="offer__img" src="./img/offer/offer-2.jpg" alt="Картинка-2">
-                    <div class="offer__content">
-                        <p class="offer__text">HOT&nbsp;DEAL</p>
-                        <h3 class="offer__title">FOR&nbsp;MEN</h3>
+                <div class="filters__select">
+                    <div class="filters__item">TRENDING NOW <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                fill="#6F6E6E" />
+                        </svg>
                     </div>
-                </div>
-                <div class="offer__block">
-                    <img class="offer__img" src="./img/offer/offer-3.jpg" alt="Картинка-3">
-                    <div class="offer__content">
-                        <p class="offer__text">NEW&nbsp;ARRIVALS</p>
-                        <h3 class="offer__title">FOR&nbsp;KIDS</h3>
+                    <div class="filters__item js-size-btn">SIZE  <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                fill="#6F6E6E" />
+                        </svg>
+                        <div class="filters__size js-size-menu">
+                            <div class="filters__size-item">XS</div>
+                            <div class="filters__size-item">S</div>
+                            <div class="filters__size-item">M</div>
+                            <div class="filters__size-item">L</div>
+                        </div>
                     </div>
-                </div>
-                <div class="offer__block">
-                    <img class="offer__img" src="./img/offer/offer-4.jpg" alt="Картинка-4">
-                    <div class="offer__content">
-                        <p class="offer__text">LUXIROUS&nbsp;&&nbsp;TRENDY</p>
-                        <h3 class="offer__title">ACCESORIES</h3>
+                    <div class="filters__item">PRICE <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.00214 5.64846C4.83521 5.64879 4.67343 5.59016 4.54488 5.48275L0.258102 1.88021C0.112196 1.75791 0.0204417 1.58217 0.00302325 1.39165C-0.0143952 1.20112 0.0439493 1.01143 0.165221 0.864289C0.286493 0.717149 0.460759 0.624619 0.649682 0.607053C0.838605 0.589487 1.02671 0.648325 1.17262 0.770623L5.00214 3.9985L8.83167 0.885905C8.90475 0.826055 8.98884 0.781361 9.0791 0.754391C9.16937 0.727421 9.26403 0.718707 9.35764 0.72875C9.45126 0.738794 9.54198 0.767396 9.6246 0.812913C9.70722 0.85843 9.7801 0.919965 9.83906 0.993981C9.90449 1.06806 9.95405 1.15498 9.98462 1.24927C10.0152 1.34357 10.0261 1.44321 10.0167 1.54197C10.0073 1.64073 9.97784 1.73646 9.93005 1.82318C9.88227 1.9099 9.81723 1.98573 9.73904 2.04592L5.45225 5.52598C5.32002 5.61641 5.16154 5.65954 5.00214 5.64846Z"
+                                fill="#6F6E6E" />
+                        </svg>
                     </div>
                 </div>
             </div>
         </section>
         <section class="products">
             <div class="container products__container">
-                <h2 class="products__title">Fetured Items</h2>
-                <p class="products__descr">Shop for items based on what we featured in this week</p>
                 <div class="products__wrapper">
                     <div class="products__item">
-                        <img class="products__img" src="./img/products/products-1.jpg" alt="Продукт-1">
+                        <img class="products__img" src="./img/catalog/image-1.jpg" alt="Продукт-1">
                         <div class="products__item-wrapper">
                             <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
                             <p class="products__text">Known for her sculptural takes on traditional tailoring,
@@ -146,7 +180,7 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <img class="products__img" src="./img/products/products-2.jpg" alt="Продукт-2">
+                        <img class="products__img" src="./img/catalog/image-2.jpg" alt="Продукт-2">
                         <div class="products__item-wrapper">
                             <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
                             <p class="products__text">Known for her sculptural takes on traditional tailoring,
@@ -155,7 +189,7 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <img class="products__img" src="./img/products/products-3.jpg" alt="Продукт-3">
+                        <img class="products__img" src="./img/catalog/image-3.jpg" alt="Продукт-3">
                         <div class="products__item-wrapper">
                             <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
                             <p class="products__text">Known for her sculptural takes on traditional tailoring,
@@ -164,7 +198,7 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <img class="products__img" src="./img/products/products-4.jpg" alt="Продукт-4">
+                        <img class="products__img" src="./img/catalog/image-4.jpg" alt="Продукт-4">
                         <div class="products__item-wrapper">
                             <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
                             <p class="products__text">Known for her sculptural takes on traditional tailoring,
@@ -173,7 +207,7 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <img class="products__img" src="./img/products/products-5.jpg" alt="Продукт-5">
+                        <img class="products__img" src="./img/catalog/image-5.jpg" alt="Продукт-5">
                         <div class="products__item-wrapper">
                             <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
                             <p class="products__text">Known for her sculptural takes on traditional tailoring,
@@ -182,7 +216,34 @@
                         </div>
                     </div>
                     <div class="products__item">
-                        <img class="products__img" src="./img/products/products-6.jpg" alt="Продукт-6">
+                        <img class="products__img" src="./img/catalog/image-6.jpg" alt="Продукт-6">
+                        <div class="products__item-wrapper">
+                            <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
+                            <p class="products__text">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <span class="products__price">$52.00</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <img class="products__img" src="./img/catalog/image-7.jpg" alt="Продукт-6">
+                        <div class="products__item-wrapper">
+                            <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
+                            <p class="products__text">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <span class="products__price">$52.00</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <img class="products__img" src="./img/catalog/image-8.jpg" alt="Продукт-6">
+                        <div class="products__item-wrapper">
+                            <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
+                            <p class="products__text">Known for her sculptural takes on traditional tailoring,
+                                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <span class="products__price">$52.00</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <img class="products__img" src="./img/catalog/image-9.jpg" alt="Продукт-6">
                         <div class="products__item-wrapper">
                             <h3 class="pruducts__name">ELLERY X M'O CAPSULE</h3>
                             <p class="products__text">Known for her sculptural takes on traditional tailoring,
@@ -191,11 +252,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="products__buttons">
-                    <button class="products__btn btn-reset">Browse All Product</button>
+                <div class="pages">
+                    <div class="pages__wrapper">
+                        <button class="pages__btn">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99512 2L2.99512 7L7.99512 12L6.99512 14L-0.00488281 7L6.99512 0L7.99512 2Z" fill="black"/>
+                            </svg>
+                        </button>
+                        <div class="pages__numbers">
+                            <span class="pages__number pages__number--active">1</span>
+                            <span class="pages__number">2</span>
+                            <span class="pages__number">3</span>
+                            <span class="pages__number">4</span>
+                            <span class="pages__number">5</span>
+                            <span class="pages__number">6....20</span>
+                        </div>
+                        <button class="pages__btn">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M-0.00500488 12L4.995 7L-0.00500488 2L0.994995 0L7.995 7L0.994995 14L-0.00500488 12Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+
         <section class="feature">
             <div class="container feature__container">
                 <div class="feature__item">

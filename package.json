@@ -1,0 +1,17 @@
+{
+    "name": "brand",
+    "version": "1.0.0",
+    "scripts": {
+        "watch:style": "sass --watch ./scss/style.scss:./css/style.css",
+        "watch:product": "sass --watch ./scss/product.scss:./css/product.css",
+        "watch:catalog": "sass --watch ./scss/catalog.scss:./css/catalog.css",
+        "start": "concurrently \"npm run watch:style\" \"npm run watch:product\" \"npm run watch:catalog\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.0",
+        "sass": "^1.62.0"
+    },
+    "dependencies": {
+        "brand": "file:"
+    }
+}
