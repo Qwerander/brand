@@ -1,18 +1,19 @@
 {
-    "name": "brand",
-    "version": "1.0.0",
-    "scripts": {
-        "watch:style": "sass --watch ./scss/style.scss:./css/style.css",
-        "watch:product": "sass --watch ./scss/product.scss:./css/product.css",
-        "watch:catalog": "sass --watch ./scss/catalog.scss:./css/catalog.css",
-        "watch:cart": "sass --watch ./scss/cart.scss:./css/cart.css",
-        "start": "concurrently \"npm run watch:style\" \"npm run watch:product\" \"npm run watch:catalog\" \"npm run watch:cart\""
-    },
-    "devDependencies": {
-        "concurrently": "^9.1.0",
-        "sass": "^1.62.0"
-    },
-    "dependencies": {
-        "brand": "file:"
-    }
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "watch:style": "sass --watch ./scss/style.scss:./css/style.css",
+    "watch:product": "sass --watch ./scss/product.scss:./css/product.css",
+    "watch:catalog": "sass --watch ./scss/catalog.scss:./css/catalog.css",
+    "watch:cart": "sass --watch ./scss/cart.scss:./css/cart.css",
+    "watch:registration": "sass --watch ./scss/registration.scss:./css/registration.css",
+    "start": "concurrently \"npm run watch:style\" \"npm run watch:product\" \"npm run watch:catalog\" \"npm run watch:cart\" \"npm run watch:registration\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "sass": "^1.62.0"
+  },
+  "dependencies": {
+    "your-project-name": "file:"
+  }
 }
