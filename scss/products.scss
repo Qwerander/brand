@@ -79,6 +79,30 @@
     color: #f16d7f;
 }
 
+.products__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products__add-to-cart {
+    padding: 15px 39px;
+    border: 1px solid #ff6a6a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #ff6a6a;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #ff6a6a;
+        color: #fff;
+    }
+}
+
 .products__buttons {
     display: flex;
     justify-content: center;
